@@ -1,0 +1,66 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Comparing the new file with the old (working) file helps in finding the
+	exact line where the defect was introduced. It would have been difficult to
+	find the line of code with this defect, if the old file was unavailable.
+	Comparing files really helps when there are thousands of lines of code in
+	the file.
+	As mentioned in the lecture, there are various command line built in functions
+	to compare files that can be used for this purpose. An example on Windows OS
+	is FC command.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    If I am backing up the old versions of my files manually, it definitely will
+	be time consuming in case I have to revert back to one of the older versions.
+	Having an easily accessible old version really helps in reducing the time I
+	will spend looking for those files. Less time spent searching means more time
+	available to work on the issue at hand.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros:
+		1. Manually choosing when to commit helps me decide the amount of change
+			that I would like to commit
+		2. As I am deciding when to commit, I will be able to add some good notes
+			in version information related to the commit
+	Cons:
+		1. This approach is prone to human error, I might forget to commit and might
+			lose the change
+		2. As the commit is manually done, seamless work is not possible. I will
+			have to continue working on the same machine until I finish the logical
+			change.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Saving multiple files in one commint allows one to understand the dependencies
+	on different files for a particular logical change.
+	This is more useful in programming as it is more likely to have multiple files
+	that are changed for a particular logic. Whereas in case of Google documents,
+	the single document is not related to any other document, so allowing to save
+	only one document in one commint makes more sense.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log:
+		This command gives a complete log of the changes for a repository from the
+		first commit to the most recent one.
+		We press 'q' on the keyboard anytime we want to exit the log view
+	git diff:
+		This command shows the differences between two commits. Commit ID is necessary
+		to run this command
+		Commit ID can be found from the log read from 'git log'.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Fill in your answer here
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
